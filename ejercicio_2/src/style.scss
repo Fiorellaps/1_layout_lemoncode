@@ -1,0 +1,49 @@
+$background-color: #ff0001;
+$color: black;
+$font-theme: "Courier New", Courier, monospace;
+$principal-font: "Times New Roman", Times, serif;
+$secondary-font: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+$border-radius: 10px;
+$box-shadow: 5px 10px;
+$box-size: 100px;
+
+div.container-1 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  & > div {
+    width: $box-size;
+    height: $box-size;
+    border: solid 2px $color;
+    border-radius: 10px;
+    text-align: center;
+    color: $color;
+    font-family: $font-theme;
+  }
+  .box:nth-child(1) {
+    background-color: $background-color;
+  }
+  .box:nth-child(2) {
+    background-color: darken($background-color, 30%);
+  }
+  .box:nth-child(3) {
+    background-color: lighten($background-color, 40%);
+  }
+  .box:nth-child(4) {
+    border: none;
+    font-family: $principal-font;
+  }
+  .box:nth-child(5) {
+    border: none;
+    font-family: $secondary-font;
+  }
+  .box:nth-child(6) {
+    box-shadow: $box-shadow;
+  }
+
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,29 @@
+body {
+  height: 100vh;
+}
+
+.menu {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.menu .box {
+  background-color: #45b39d;
+  width: 200px;
+  height: 50px;
+  border: solid 2px black;
+  text-align: center;
+}
+.menu .home {
+  background-color: #378e7d;
+}
+
+@media screen and (max-width: 450px) {
+  .menu {
+    flex-flow: row wrap;
+  }
+  .menu .box {
+    width: 300px;
+  }
+}
+
+/*# sourceMappingURL=/style.97fcb138.css.map */

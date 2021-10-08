@@ -1,0 +1,27 @@
+$background-color: #45b39d;
+body {
+  height: 100vh;
+}
+.menu {
+  display: flex;
+  flex-flow: row nowrap;
+  .box {
+    background-color: $background-color;
+    width: 200px;
+    height: 50px;
+    border: solid 2px black;
+    text-align: center;
+  }
+  .home {
+    background-color: darken($background-color, 10%);
+  }
+}
+@media screen and (max-width: 450px) {
+  .menu {
+    flex-flow: row wrap;
+
+    .box {
+      width: 300px;
+    }
+  }
+}

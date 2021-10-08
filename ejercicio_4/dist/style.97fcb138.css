@@ -1,0 +1,36 @@
+main {
+  background-color: gray;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 1em;
+  border: solid 2px black;
+  background-color: white;
+  width: 400px;
+  display: grid;
+  grid-template-rows: 300px 50px 1fr 50px 50px;
+  gap: 15px;
+}
+.container .image {
+  background-image: url("https://ichef.bbci.co.uk/news/800/cpsprodpb/169A5/production/_111118529_gettyimages-1125074301.jpg");
+}
+.container .title {
+  font-family: fantasy;
+  font-size: 2em;
+  font-weight: bold;
+}
+.container .time {
+  text-align: right;
+}
+.container .info-button {
+  background-color: #58d68d;
+}
+.container > div {
+  margin: 1em;
+}
+
+/*# sourceMappingURL=/style.97fcb138.css.map */

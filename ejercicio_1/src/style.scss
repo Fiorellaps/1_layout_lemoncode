@@ -1,0 +1,51 @@
+$background-color: #ff0001;
+$text-color: white;
+body {
+  height: 100vh;
+}
+
+div.container-1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  & > div {
+    width: 200px;
+    height: 200px;
+    border: solid 2px black;
+    border-radius: 10px;
+    text-align: center;
+    color: $text-color;
+  }
+  .darken-4 {
+    background-color: darken($background-color, 40%);
+  }
+  .darken-3 {
+    background-color: darken($background-color, 30%);
+  }
+  .darken-2 {
+    background-color: darken($background-color, 20%);
+  }
+  .darken-1 {
+    background-color: darken($background-color, 10%);
+  }
+  .base-color {
+    background-color: $background-color;
+  }
+  .lighten-1 {
+    background-color: lighten($background-color, 10%);
+  }
+  .lighten-2 {
+    background-color: lighten($background-color, 20%);
+  }
+  .lighten-3 {
+    background-color: lighten($background-color, 30%);
+  }
+  .lighten-4 {
+    background-color: lighten($background-color, 40%);
+  }
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
